@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* a # em html é id em css é # (só pode em um elemento)
+ tudo em html é class em css é . (Pode ser em vários elementos)
+ */
+body{
+    background-color:#A4DBAD;
+    font-family: Arial, Helvetica, sans-serif ;
+
+}
+h1{
+    color:#15411b;
+     
+}
+h1#principal{
+    text-align: center;
+    background-color:#15411b;
+    color: white;
+    
+
+}
+h2{
+    color:#3c5040; 
+
+}
+/* tudo que tiver no básico ficará na cor verde, assim ficará na cor que eu escolher no intermediário e avançado */
+.basico{
+    color:#15411b;
+}
+
+.intermediario{
+    color: ;
+
+}
+.avancado{
+    color: ;
+}
