@@ -11,7 +11,14 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
 
+        caption {
+            font-family: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
         td,th {
             border: 1px solid black;
@@ -22,6 +29,17 @@
             background-color: gray;
             color: white;
 
+        }
+        thead > tr > th {
+            position: sticky;
+            top: 1px;
+            background-color: gray;
+           
+
+        }
+
+        tbody > tr:nth-child(2n) {  /* zebrado posso usar odd e even ou 2n */
+            background-color: lightgray;
         }
 
         td.num {
@@ -34,6 +52,7 @@
     <!--
         Anatomia para tabelas grandes
         TABLE
+            CAPCTION
             THEAD
                tr, td, th
             TBODY
@@ -42,15 +61,16 @@
                tr, td, th
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
              <tr>
-                <th>Estado</th> <!-- título -->
-                <th>População</th>
+                <th scope="col">Estado</th> <!-- os th são títulos e td são dados-->
+                <th scope="col" style="width: 50px;">População</th>
              </tr>
         </thead>
         <tbody>
             <tr>
-                <td>São Paulo</td> <!-- Dados-->
+                <td>São Paulo</td> 
                 <td class="num">44 411 238</td>
 
             </tr>
@@ -162,7 +182,7 @@
            </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th> <!-- row é o dado na mesma linha do título-->
                 <td>0000</td>
             </tr>
 
