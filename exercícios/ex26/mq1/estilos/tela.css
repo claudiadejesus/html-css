@@ -26,7 +26,7 @@ header > h1 {
  }
 
  menu li {
-    background-color: darkgray;
+    background-color: darkgray; /* deixa um background visível no link */
     color: white;
     display: inline-block;
     padding: 10px;
